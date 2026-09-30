@@ -1,0 +1,9 @@
+model,held_out,macro_f1,micro_f1,Political,Fairness & equality,Cultural identity,Policy prescription & evaluation,macro_f1_sd_over_seeds
+char,cumhuriyet,0.612,0.625,0.818,0.453,0.784,0.393,0.039
+char,odatv,0.442,0.53,0.708,0.22,0.705,0.133,0.069
+char,sabah,0.513,0.586,0.882,0.415,0.42,0.335,0.009
+char,yenicag,0.553,0.605,0.823,0.415,0.427,0.548,0.017
+word,cumhuriyet,0.588,0.646,0.825,0.46,0.874,0.192,0.054
+word,odatv,0.407,0.519,0.742,0.122,0.601,0.165,0.031
+word,sabah,0.492,0.592,0.894,0.419,0.333,0.321,0.02
+word,yenicag,0.567,0.606,0.824,0.441,0.454,0.549,0.025

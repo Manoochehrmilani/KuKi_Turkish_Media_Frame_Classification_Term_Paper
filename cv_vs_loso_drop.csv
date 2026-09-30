@@ -1,0 +1,3 @@
+model,random_cv_macro_f1,loso_mean_macro_f1,absolute_drop,relative_drop_%
+word,0.579,0.513,0.065,11.298
+char,0.571,0.53,0.041,7.234

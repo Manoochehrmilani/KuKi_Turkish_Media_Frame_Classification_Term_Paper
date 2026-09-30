@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "macro_f1": 0.19496021220159152,
+    "micro_f1": 0.5287769784172662
+  },
+  "bootstrap_ci": [
+    -0.020358273206420585,
+    0.03577873039084298
+  ],
+  "alpha": {
+    "Political": 0.38630136986301367,
+    "Fairness & equality": 0.15587529976019188,
+    "Cultural identity": 0.508355795148248,
+    "Policy prescription & evaluation": 0.171967654986523,
+    "Economic": 0.6427906976744187,
+    "Security & defense": 0.6367076631977294
+  },
+  "masking": {
+    "odatv_string_in_odatv_articles": 58,
+    "odatv_string_in_other_articles": 1,
+    "word_macro_f1_original": 0.5788670096680761,
+    "word_macro_f1_masked": 0.5770753898383075
+  },
+  "drop": [
+    {
+      "model": "word",
+      "random_cv_macro_f1": 0.579,
+      "loso_mean_macro_f1": 0.513,
+      "absolute_drop": 0.065,
+      "relative_drop_%": 11.298
+    },
+    {
+      "model": "char",
+      "random_cv_macro_f1": 0.571,
+      "loso_mean_macro_f1": 0.53,
+      "absolute_drop": 0.041,
+      "relative_drop_%": 7.234
+    }
+  ]
+}
