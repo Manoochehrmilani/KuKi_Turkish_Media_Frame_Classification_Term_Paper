@@ -1,0 +1,25 @@
+﻿family,annotator,n_sentences,evidential_rate,baseline_all_sentences
+Attack on Reputation,ALL,333,0.108,0.067
+Attack on Reputation,11,92,0.098,0.07
+Attack on Reputation,6,151,0.119,0.06
+Attack on Reputation,7,97,0.103,0.064
+Justification,ALL,365,0.058,0.067
+Justification,11,39,0.128,0.07
+Justification,6,272,0.051,0.06
+Justification,7,57,0.053,0.064
+Manipulative Wording,ALL,256,0.078,0.067
+Manipulative Wording,11,4,0.25,0.07
+Manipulative Wording,6,163,0.055,0.06
+Manipulative Wording,7,90,0.122,0.064
+Simplification,ALL,155,0.019,0.067
+Simplification,11,4,0.0,0.07
+Simplification,6,95,0.0,0.06
+Simplification,7,58,0.052,0.064
+Call,ALL,145,0.021,0.067
+Call,11,37,0.027,0.07
+Call,6,42,0.024,0.06
+Call,7,71,0.014,0.064
+Distraction,ALL,62,0.129,0.067
+Distraction,11,13,0.154,0.07
+Distraction,6,1,1.0,0.06
+Distraction,7,48,0.104,0.064

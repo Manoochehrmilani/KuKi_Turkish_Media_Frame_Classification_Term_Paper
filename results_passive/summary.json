@@ -1,0 +1,338 @@
+{
+  "articles": 230,
+  "sentences": 12107,
+  "passive_sentences": 2450,
+  "agentless_passive_sentences": 2356,
+  "evidential_nfh_sentences": 807,
+  "multiannotated_articles": 79,
+  "note": "Stanza outputs are parser predictions. Validate the sample before reporting final parser-based rates.",
+  "CONDITIONAL_primary": {
+    "description": "role_disagreement includes presence differences; label_conflict is restricted to sentences where at least two annotators marked something and compares their labels.",
+    "l1_logit_given_annotated": {
+      "n_sentences": 449,
+      "n_docs": 74,
+      "formula": "l1_role_disagreement ~ passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "passive": {
+          "OR": 1.5008187816276892,
+          "CI95": [
+            0.4854655723970437,
+            4.639787336854082
+          ],
+          "p": 0.4807755660838915
+        },
+        "evidential_nfh": {
+          "OR": 0.5769207268418033,
+          "CI95": [
+            0.18687128673501147,
+            1.7811057593435813
+          ],
+          "p": 0.338895355893687
+        },
+        "log_words": {
+          "OR": 2.3115604332997735,
+          "CI95": [
+            1.234402128052185,
+            4.328663662649766
+          ],
+          "p": 0.008847460928449293
+        }
+      }
+    },
+    "l1_label_conflict_given_both_annotated": {
+      "n_sentences": 104,
+      "n_docs": 46,
+      "formula": "l1_label_conflict ~ agentless_passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "agentless_passive": {
+          "OR": 1.3608375926576801,
+          "CI95": [
+            0.610491035227896,
+            3.0334253031234835
+          ],
+          "p": 0.45124989818182204
+        },
+        "evidential_nfh": {
+          "OR": 0.26333594169256375,
+          "CI95": [
+            0.0376967967847654,
+            1.839567923583746
+          ],
+          "p": 0.17850185960685916
+        },
+        "log_words": {
+          "OR": 4.7337775819966375,
+          "CI95": [
+            1.8040414855003721,
+            12.421360803462138
+          ],
+          "p": 0.001584616597538034
+        }
+      }
+    },
+    "l1_label_conflict_n_and_rate": [
+      104,
+      0.3173076923076923
+    ],
+    "l3_label_conflict_given_both_annotated": {
+      "n_sentences": 41,
+      "n_docs": 19,
+      "formula": "l3_label_conflict ~ passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "passive": {
+          "OR": 2.7334710081926685,
+          "CI95": [
+            0.618395972689798,
+            12.082652673383281
+          ],
+          "p": 0.18479822103688193
+        },
+        "evidential_nfh": {
+          "OR": 0.6089993909980171,
+          "CI95": [
+            0.04623582355020506,
+            8.02149134065356
+          ],
+          "p": 0.70614733665307
+        },
+        "log_words": {
+          "OR": 0.20011580844891066,
+          "CI95": [
+            0.04371009619569248,
+            0.916180477203058
+          ],
+          "p": 0.038195815930817195
+        }
+      }
+    },
+    "l3_label_conflict_n_and_rate": [
+      41,
+      0.6097560975609756
+    ],
+    "l1_agentless_given_annotated": {
+      "n_sentences": 449,
+      "n_docs": 74,
+      "formula": "l1_role_disagreement ~ agentless_passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "agentless_passive": {
+          "OR": 1.2415952825284855,
+          "CI95": [
+            0.41402713900739163,
+            3.7233280149045216
+          ],
+          "p": 0.6993501837415943
+        },
+        "evidential_nfh": {
+          "OR": 0.6019534731734201,
+          "CI95": [
+            0.2004023858480349,
+            1.8081021457514574
+          ],
+          "p": 0.36572453650129944
+        },
+        "log_words": {
+          "OR": 2.3998401667058546,
+          "CI95": [
+            1.2856573272838931,
+            4.479601759748736
+          ],
+          "p": 0.0059772196248075215
+        }
+      }
+    }
+  },
+  "PRESENCE_secondary": {
+    "l1_any_annotation": {
+      "n_sentences": 4166,
+      "n_docs": 79,
+      "formula": "l1_annotated_any ~ passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "passive": {
+          "OR": 0.9079475880768667,
+          "CI95": [
+            0.7179112634487365,
+            1.1482879078041726
+          ],
+          "p": 0.42026878585177896
+        },
+        "evidential_nfh": {
+          "OR": 0.9512449738888562,
+          "CI95": [
+            0.6268821516296005,
+            1.4434403627485317
+          ],
+          "p": 0.814268121728604
+        },
+        "log_words": {
+          "OR": 3.357071227311356,
+          "CI95": [
+            2.6370879641651688,
+            4.273625824540718
+          ],
+          "p": 8.107232260964644e-23
+        }
+      }
+    },
+    "l3_any_annotation": {
+      "n_sentences": 4166,
+      "n_docs": 79,
+      "formula": "l3_annotated_any ~ passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "passive": {
+          "OR": 1.1261522769893688,
+          "CI95": [
+            0.8814050179924591,
+            1.4388605976590778
+          ],
+          "p": 0.34197870081519477
+        },
+        "evidential_nfh": {
+          "OR": 0.8016114767333503,
+          "CI95": [
+            0.5153886965999166,
+            1.24678900385245
+          ],
+          "p": 0.3264823156973734
+        },
+        "log_words": {
+          "OR": 1.220039409232045,
+          "CI95": [
+            1.0215078129899868,
+            1.457155922990349
+          ],
+          "p": 0.02817797157058856
+        }
+      }
+    }
+  },
+  "role_presence_models": {
+    "ANTAGONIST": {
+      "n_sentences": 12107,
+      "n_docs": 230,
+      "formula": "any_ANTAGONIST ~ agentless_passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "agentless_passive": {
+          "OR": 0.7889074745581348,
+          "CI95": [
+            0.6336675151463312,
+            0.9821791216012873
+          ],
+          "p": 0.033938591398686234
+        },
+        "evidential_nfh": {
+          "OR": 0.8334212055016862,
+          "CI95": [
+            0.5947172454282602,
+            1.1679346968990345
+          ],
+          "p": 0.2899046189845875
+        },
+        "log_words": {
+          "OR": 3.6297039538705826,
+          "CI95": [
+            3.0466736225248883,
+            4.324306579916935
+          ],
+          "p": 3.3545684143287284e-47
+        }
+      }
+    },
+    "PROTAGONIST": {
+      "n_sentences": 12107,
+      "n_docs": 230,
+      "formula": "any_PROTAGONIST ~ agentless_passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "agentless_passive": {
+          "OR": 0.6439661395456124,
+          "CI95": [
+            0.4905810908695158,
+            0.8453085465366592
+          ],
+          "p": 0.0015208848030576147
+        },
+        "evidential_nfh": {
+          "OR": 1.0619814179387628,
+          "CI95": [
+            0.7035989137036024,
+            1.6029082906207035
+          ],
+          "p": 0.7746477671239562
+        },
+        "log_words": {
+          "OR": 3.5493827122030868,
+          "CI95": [
+            2.8806798312748865,
+            4.373314070141096
+          ],
+          "p": 1.27244197841043e-32
+        }
+      }
+    },
+    "INNOCENT": {
+      "n_sentences": 12107,
+      "n_docs": 230,
+      "formula": "any_INNOCENT ~ agentless_passive + evidential_nfh + log_words",
+      "odds_ratios": {
+        "agentless_passive": {
+          "OR": 1.1641906666355162,
+          "CI95": [
+            0.8718958329841501,
+            1.5544745794259187
+          ],
+          "p": 0.3027162862681705
+        },
+        "evidential_nfh": {
+          "OR": 0.7535520345441339,
+          "CI95": [
+            0.46299294660062396,
+            1.226456413504331
+          ],
+          "p": 0.25487900179401535
+        },
+        "log_words": {
+          "OR": 3.0496691589496474,
+          "CI95": [
+            2.337439614676207,
+            3.9789186084864894
+          ],
+          "p": 2.0936425834109083e-16
+        }
+      }
+    }
+  },
+  "evidential_attack_on_reputation": {
+    "n_sentences": 12107,
+    "n_docs": 230,
+    "formula": "any_AoR ~ evidential_nfh + passive + log_words",
+    "odds_ratios": {
+      "evidential_nfh": {
+        "OR": 1.424591855071045,
+        "CI95": [
+          0.9659261912985508,
+          2.101052825585398
+        ],
+        "p": 0.07424667706143877
+      },
+      "passive": {
+        "OR": 0.6067464237036684,
+        "CI95": [
+          0.45028258145181504,
+          0.8175782005384689
+        ],
+        "p": 0.0010249216207750028
+      },
+      "log_words": {
+        "OR": 1.8409884448561142,
+        "CI95": [
+          1.5475314855535665,
+          2.190093374986404
+        ],
+        "p": 5.62895147628127e-12
+      }
+    }
+  },
+  "sentence_length_by_passive": {
+    "0": 10.26,
+    "1": 18.08
+  }
+}
