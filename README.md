@@ -46,6 +46,8 @@ For the leave-one-out-outlet experiment, performance was averaged over five thre
 
 ```text
 .
+KuKi_Turkish_Media_Frame_Classification_Term_Paper/
+│
 ├── README.md
 │
 ├── kuki_tr_experiment.py
@@ -72,21 +74,17 @@ For the leave-one-out-outlet experiment, performance was averaged over five thre
 │   ├── odatv_masking_check.csv
 │   └── supplementary_summary.json
 │
-├── results_passive/
-│   ├── summary.json
-│   ├── sentence_features.csv
-│   ├── multiannotated_sentence_features.csv
-│   ├── article_disagreement_summary.csv
-│   ├── source_summary.csv
-│   ├── l1_disagreement_by_length_bin.csv
-│   ├── l3_disagreement_by_length_bin.csv
-│   ├── evidential_by_l3_family_per_annotator.csv
-│   ├── manual_validation_50.csv
-│   └── manual_validation_agent_balance.csv
-│
-└── paper/
-    ├── KuKi_Turkish_Media_Frame_Classification_Term_Paper_FINAL.docx
-    └── KuKi_final_fixed.pdf
+└── results_passive/
+    ├── summary.json
+    ├── sentence_features.csv
+    ├── multiannotated_sentence_features.csv
+    ├── article_disagreement_summary.csv
+    ├── source_summary.csv
+    ├── l1_disagreement_by_length_bin.csv
+    ├── l3_disagreement_by_length_bin.csv
+    ├── evidential_by_l3_family_per_annotator.csv
+    ├── manual_validation_50.csv
+    └── manual_validation_agent_balance.csv
 ```
 
 ## Code
